@@ -2,10 +2,20 @@
 //
 
 #include <iostream>
+#include "Airplane.cpp"
+#include "Car.cpp"
+#include "Boat.cpp"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Airplane* airplane = new Airplane();
+    airplane->drive();
+
+    Car* car = new Car();
+    car->drive();
+
+    Boat* boat = new Boat();
+    boat->drive();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
