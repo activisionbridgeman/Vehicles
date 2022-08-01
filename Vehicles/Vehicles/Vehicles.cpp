@@ -1,4 +1,5 @@
 // Vehicles.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Write and print out data for 3 different types of vehicles (plane, car, and boat)
 //
 
 #include <iostream>
@@ -9,12 +10,25 @@
 int main()
 {
     Airplane* airplane = new Airplane();
+    airplane->altitude = 6;
+    airplane->weight = 50000;
+    airplane->calculateTravelTime(1000);
     airplane->drive();
 
+    std::cout << "\n";
+
     Car* car = new Car();
+    car->color = "blue";
+    car->weight = 3000;
+    car->calculateTravelTime(50);
     car->drive();
 
+    std::cout << "\n";
+
     Boat* boat = new Boat();
+    boat->hasSail = true;
+    boat->weight = 2000;
+    boat->calculateTravelTime(200);
     boat->drive();
 }
 
